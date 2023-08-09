@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phanthom Samurai</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo2.png" />
+  </head>
+  <body>
+    <div class="canvas" id="canvas">
+      <!-- background layer -->
+      <div class="background-layer-1-wrap" id="background-layer-1-wrap">
+        <img
+          src="assets/foto4.jpg"
+          alt=""
+          class="background-layer"
+          id="background-layer-1"
+        />
+        <div class="background-layer-1-grey"></div>
+      </div>
+      <!-- upper layer -->
+      <div class="upper-layer" id="upper-layer">
+        <div class="log" id="log1">
+          <img
+            src="assets/Cropped/ghost/Idle/Idle1.png"
+            alt=""
+            class="enemy"
+            id="enemy1"
+            name="1"
+          />
+          <div class="charge-track" id="charge-track" name="1"></div>
+          <img src="assets/stage.png" alt="" class="log-img" name="1" />
+        </div>
+        <div class="log" id="log2">
+          <img
+            src="assets/Cropped/ghost/Idle/Idle1.png"
+            alt=""
+            class="enemy"
+            id="enemy2"
+            name="2"
+          />
+          <div
+            src="assets/Cropped/ghost/Attack3/Charge_1 1.png"
+            alt=""
+            class="charge-track"
+            id="charge-track"
+            name="2"
+          ></div>
+          <img src="assets/stage.png" alt="" class="log-img" name="2" />
+        </div>
+        <div class="log" id="log3">
+          <img
+            src="assets/Cropped/ghost/Idle/Idle1.png"
+            alt=""
+            class="enemy"
+            id="enemy3"
+            name="3"
+          />
+          <div
+            src="assets/Cropped/ghost/Attack3/Charge_1 1.png"
+            alt=""
+            class="charge-track"
+            id="charge-track"
+            name="3"
+          ></div>
+          <img src="assets/stage.png" alt="" class="log-img" name="3" />
+        </div>
+        <div class="log" id="log4">
+          <img
+            src="assets/Cropped/ghost/Idle/Idle1.png"
+            alt=""
+            class="enemy"
+            id="enemy4"
+            name="4"
+          />
+          <div
+            src="assets/Cropped/ghost/Attack3/Charge_1 1.png"
+            alt=""
+            class="charge-track"
+            id="charge-track"
+            name="4"
+          ></div>
+          <img src="assets/stage.png" alt="" class="log-img" name="4" />
+        </div>
+
+        <!-- TEST EMPTY -->
+        <div class="log" id="log5">
+          <img
+            src="assets/Cropped/ghost/Idle/Idle1.png"
+            alt=""
+            class="enemy"
+            id="enemy5"
+            name="5"
+          />
+          <div
+            src="assets/Cropped/ghost/Attack3/Charge_1 1.png"
+            alt=""
+            class="charge-track"
+            id="charge-track"
+            name="5"
+          ></div>
+          <img src="assets/stage.png" alt="" class="log-img" name="5" />
+        </div>
+
+        <div class="log boss-log" id="log6">
+          <img
+            src="assets/Cropped/wizard/Idle/Idle 1.png"
+            alt=""
+            class="enemy"
+            id="boss"
+            name="6"
+          />
+          <div
+            src="assets/Cropped/ghost/Attack3/Charge_1 1.png"
+            alt=""
+            class="charge-track"
+            id="charge-track"
+            name="6"
+          ></div>
+          <img
+            src="assets/stage.png"
+            alt=""
+            class="log-img boss-log-img"
+            name="6"
+          />
+        </div>
+
+        <img
+          src="assets/Cropped/samurai/Idle/Idle1.png"
+          alt=""
+          id="player"
+          class="player"
+        />
+
+        <img src="assets/ground.png" alt="" class="ground" id="ground" />
+      </div>
+      <!-- score board -->
+      <div class="scoreboard" id="scoreboard">
+        <div class="player-health" id="player-health">
+          <div class="player-logo-wrap">
+            <img
+              src="assets/logo2.png"
+              alt=""
+              class="player-logo"
+              id="player-logo"
+            />
+          </div>
+          <div class="healthbar-outer" id="healthbar-outer">
+            <div class="healthbar-inner" id="healthbar-inner"></div>
+          </div>
+        </div>
+        <!-- <div class="powerups" id="powerups">audio</div> -->
+        <div class="player-score" id="player-score">0</div>
+      </div>
+      <div class="game-won-menu-wrap" id="game-won-menu-wrap">
+        <div class="player-place" id="player-place">You Win!</div>
+        <div class="player-end-score-wrap" id="player-end-score-wrap">
+          <div class="end-score-text">Your Score:</div>
+          <div class="end-score" id="end-score">405</div>
+        </div>
+
+        <div class="game-won-menu-bottom">
+          <a href="start.html" class="end-game-go-home">Home</a>
+          <div class="end-game-restart" id="end-game-restart">Restart</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.canvas {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.game-won-menu-wrap {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #13121294; */
+  background-color: #1d1d1d;
+  opacity: 0;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* transition: 500ms ease; */
+}
+
+.player-place {
+  font-family: "Permanent Marker", cursive;
+  font-size: 85px;
+  color: #d12020;
+  font-weight: bold;
+}
+
+.end-score-text,
+.end-score {
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  color: #fff8f8;
+  text-align: center;
+}
+
+.end-score {
+  font-weight: bolder;
+}
+
+.game-won-menu-bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.end-game-go-home,
+.end-game-restart {
+  text-decoration: none;
+  font-family: "Kaushan Script", cursive;
+  color: rgba(246, 246, 246, 0.89);
+  font-size: 45px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 0 50px;
+  cursor: pointer;
+}
+
+.end-game-restart {
+  background-color: rgba(194, 41, 41, 0.897);
+  /* border-radius: 3px; */
+}
+
+.game-won-menu-wrap-anima-class {
+}
+
+.scoreboard {
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-health,
+.powerups,
+.player-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.player-logo-wrap {
+  background-color: rgb(9, 34, 25);
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.healthbar-outer {
+  height: 30px;
+  width: 340px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-left: 10px;
+  /* z-index: 7; */
+  overflow: hidden;
+}
+
+.healthbar-inner {
+  height: 30px;
+  width: 340px;
+  background-color: red;
+  border-radius: 50px 0 0 50px;
+  /* z-index: 6; */
+}
+
+.background-layer-1-wrap {
+  width: 2600px;
+  /* background-color: aliceblue; */
+}
+
+.background-layer-1-grey {
+  position: absolute;
+  width: 2600px;
+  min-height: 100vh;
+  /* background-color: #d9d9d949; */
+  background-color: #1e1e1e75;
+}
+
+.background-layer {
+  position: absolute;
+  width: 2600px;
+  min-height: 100vh;
+  bottom: 0;
+  left: -5%;
+  /* z-index: 1; */
+}
+
+.upper-layer {
+  width: 2600px;
+  height: 100vh;
+  /* z-index: 10; */
+  position: absolute;
+  /* border: solid 1px black; */
+}
+
+.ground {
+  width: 2600px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.player {
+  /* width: 50px; */
+  height: 140px;
+
+  position: absolute;
+  bottom: 20%;
+  left: 2%;
+  padding: 0;
+  margin: 0;
+}
+
+.player-score {
+  font-family: "Rock Salt", cursive;
+  font-size: 48px;
+}
+
+.log {
+  width: 324px;
+  height: 233px;
+  position: absolute;
+}
+
+.enemy {
+  height: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+#boss {
+  height: 250px;
+}
+
+.boss-log {
+  height: 363px;
+}
+
+.charge-track {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  top: 30px;
+  right: 80px;
+  /* display: none; */
+  background-color: transparent;
+}
+
+.charge {
+  width: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.log-img {
+  bottom: 0;
+  width: 324px;
+  height: 113px;
+  position: absolute;
+}
+
+#log1 {
+  left: 10%;
+  bottom: 10%;
+}
+
+#log2 {
+  left: 80%;
+  bottom: 15%;
+}
+
+#log3 {
+  left: 30%;
+  bottom: 20%;
+}
+
+#log4 {
+  left: 50%;
+  bottom: 30%;
+}
+
+#log5 {
+  left: 40%;
+  bottom: 50%;
+}
+
+#log6 {
+  left: 15%;
+  bottom: 40%;
+}
